@@ -558,3 +558,74 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    /* Big Message Section */
+    #big-message {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    #big-message h1 {
+        font-size: 2.2rem; /* Smaller font for headers */
+    }
+
+    #big-message .guarantee {
+        font-size: 3rem; /* Adjust size for "GUARANTEED" */
+    }
+
+    #big-message .subtext {
+        font-size: 1rem; /* Smaller subtext font */
+    }
+
+    .cta-button {
+        padding: 0.8rem 2rem; /* Adjust button size */
+        font-size: 1.2rem; /* Reduce button font size */
+    }
+
+    /* Form Section */
+    .styled-form {
+        max-width: 90%; /* Reduce width on mobile */
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .styled-form label {
+        font-size: 1rem; /* Smaller labels */
+    }
+
+    .styled-form input {
+        font-size: 1rem; /* Adjust input font size */
+        padding: 0.7rem; /* Smaller padding for inputs */
+    }
+
+    .styled-form .cta-button {
+        font-size: 1.1rem; /* Reduce button size */
+    }
+
+    /* Pricing Section */
+    #pricing .pricing-grid {
+        flex-direction: column; /* Stack pricing items vertically */
+        gap: 1rem; /* Add spacing between stacked items */
+    }
+
+    .pricing-item {
+        width: 100%; /* Full width for pricing items */
+    }
+
+    /* Features Section */
+    #features .feature-grid {
+        flex-direction: column; /* Stack feature items vertically */
+        gap: 1rem;
+    }
+
+    .feature-item {
+        width: 100%; /* Full width for features */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem; /* Adjust footer font size */
+    }
+}
+

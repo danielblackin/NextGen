@@ -561,82 +561,83 @@ footer {
 
 /* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
-    /* Hero Section (Green Background) */
+    /* Hero Section (Landing Page) */
     #big-message {
-        padding: 2rem 1rem; /* Reduce padding */
+        padding: 2rem 1rem; /* Adjust padding for better spacing */
+        min-height: 60vh; /* Reduce overall height */
         text-align: center;
-        min-height: 100vh; /* Full viewport height */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     #big-message h1 {
-        font-size: 1.8rem; /* Smaller font for the main header */
+        font-size: 1.6rem; /* Smaller, balanced header */
         line-height: 1.2;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.7rem;
     }
 
     #big-message .guarantee {
-        font-size: 2rem; /* Adjust "GUARANTEED" size */
+        font-size: 2rem; /* Bold and prominent but not oversized */
         margin-bottom: 1rem;
     }
 
     #big-message .subtext {
-        font-size: 0.9rem; /* Smaller subtext font */
-        margin-bottom: 1.2rem;
+        font-size: 0.9rem; /* Slightly smaller and clean */
+        line-height: 1.4;
+        margin-bottom: 1.5rem;
     }
 
     .cta-button {
-        font-size: 1rem; /* Reduce button font size */
-        padding: 0.7rem 1.5rem; /* Adjust button padding */
+        font-size: 1rem; /* Smaller button font */
+        padding: 0.6rem 1.2rem; /* Compact button padding */
+        border-radius: 30px; /* Tighter button design */
     }
 
     /* Form Section */
     .styled-form {
-        max-width: 90%; /* Adjust width for mobile */
-        padding: 1.5rem; /* Compact padding */
-        margin-top: 1rem;
-        background: #f8f8f8; /* Ensure input area stands out */
-        border-radius: 15px;
-    }
-
-    .styled-form label {
-        font-size: 1rem; /* Smaller labels */
+        max-width: 95%; /* Make form nearly full width */
+        margin: 1.5rem auto; /* Center and add spacing */
+        padding: 1.5rem; /* Adjust padding */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .styled-form input {
-        font-size: 0.9rem; /* Adjust input font size */
-        padding: 0.7rem; /* Smaller padding for inputs */
+        font-size: 1rem; /* Input font size */
+        padding: 0.7rem; /* Compact padding */
     }
 
     .styled-form .cta-button {
-        font-size: 1.1rem; /* Button font size for form */
+        font-size: 1rem; /* Smaller submit button */
+        padding: 0.6rem 1rem;
     }
 
-    /* Footer */
-    footer {
-        background: #333; /* Keep footer black */
-        color: white;
-        text-align: center;
-        padding: 0.5rem 0;
-        font-size: 0.75rem; /* Adjust footer text size */
-        white-space: nowrap; /* Prevent text wrapping */
-        margin-top: auto; /* Footer sticks to bottom */
-        width: 100%; /* Full-width footer */
+    /* Pricing Section */
+    #pricing .pricing-grid {
+        flex-direction: column; /* Stack items vertically */
+        gap: 1.5rem; /* Add spacing */
     }
 
-    /* Pricing and Features Sections */
-    .pricing-grid, .feature-grid {
+    .pricing-item {
+        width: 100%; /* Full width for each item */
+        padding: 1.5rem; /* Adjust padding */
+    }
+
+    /* Features Section */
+    #features .feature-grid {
         flex-direction: column; /* Stack items vertically */
         gap: 1.5rem; /* Add space between items */
     }
 
-    .pricing-item, .feature-item {
-        width: 100%; /* Full width for smaller screens */
-        padding: 1.5rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Maintain clean look */
+    .feature-item {
+        width: 100%; /* Full width for items */
+        padding: 1.5rem; /* Adjust padding */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.75rem; /* Reduce font size for small screens */
+        text-align: center;
+        padding: 0.5rem 1rem; /* Adjust padding */
+        white-space: nowrap; /* Keep footer on one line */
+        overflow: hidden; /* Ensure it doesn't wrap */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
     }
 }
-
-

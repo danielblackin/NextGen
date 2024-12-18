@@ -592,13 +592,16 @@ footer {
 
     /* Footer */
     footer {
-        font-size: 0.75rem; /* Smaller font size */
-        text-align: center;
-        white-space: nowrap; /* Prevent text wrapping */
-        overflow: hidden;
-        text-overflow: ellipsis; /* Add ellipsis if content overflows */
-        padding: 0.5rem; /* Reduce padding */
-    }
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem; /* Reduce padding */
+    font-size: 0.75rem; /* Smaller font size */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis if overflow occurs */
+}
+
 
     /* Features and Pricing Sections */
     .pricing-grid, .feature-grid {

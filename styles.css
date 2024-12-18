@@ -561,71 +561,81 @@ footer {
 
 /* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
-    /* Big Message Section */
+    /* Hero Section (Landing Page) */
     #big-message {
         padding: 2rem 1rem;
         text-align: center;
+        min-height: 80vh; /* Reduce height for mobile */
     }
 
     #big-message h1 {
-        font-size: 2.2rem; /* Smaller font for headers */
+        font-size: 2rem; /* Reduce header font size */
+        line-height: 1.2;
     }
 
     #big-message .guarantee {
-        font-size: 3rem; /* Adjust size for "GUARANTEED" */
+        font-size: 2.5rem; /* Adjust "GUARANTEED" size */
+        margin-bottom: 1rem;
     }
 
     #big-message .subtext {
-        font-size: 1rem; /* Smaller subtext font */
+        font-size: 0.9rem; /* Smaller subtext */
+        margin-bottom: 1.5rem;
     }
 
     .cta-button {
         padding: 0.8rem 2rem; /* Adjust button size */
-        font-size: 1.2rem; /* Reduce button font size */
-    }
-
-    /* Form Section */
-    .styled-form {
-        max-width: 90%; /* Reduce width on mobile */
-        padding: 1.5rem; /* Adjust padding for smaller screens */
-    }
-
-    .styled-form label {
-        font-size: 1rem; /* Smaller labels */
-    }
-
-    .styled-form input {
-        font-size: 1rem; /* Adjust input font size */
-        padding: 0.7rem; /* Smaller padding for inputs */
-    }
-
-    .styled-form .cta-button {
-        font-size: 1.1rem; /* Reduce button size */
-    }
-
-    /* Pricing Section */
-    #pricing .pricing-grid {
-        flex-direction: column; /* Stack pricing items vertically */
-        gap: 1rem; /* Add spacing between stacked items */
-    }
-
-    .pricing-item {
-        width: 100%; /* Full width for pricing items */
-    }
-
-    /* Features Section */
-    #features .feature-grid {
-        flex-direction: column; /* Stack feature items vertically */
-        gap: 1rem;
-    }
-
-    .feature-item {
-        width: 100%; /* Full width for features */
+        font-size: 1.1rem; /* Smaller button font */
     }
 
     /* Footer */
     footer {
-        font-size: 0.9rem; /* Adjust footer font size */
+        font-size: 0.8rem; /* Smaller text */
+        text-align: center;
+        padding: 0.5rem 1rem;
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Add ellipsis if content exceeds width */
+    }
+
+    /* Form Section */
+    .styled-form {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .styled-form label {
+        font-size: 1rem;
+    }
+
+    .styled-form input {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    .styled-form .cta-button {
+        font-size: 1.1rem;
+    }
+
+    /* Pricing Section */
+    #pricing .pricing-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .pricing-item {
+        width: 100%;
+    }
+
+    /* Features Section */
+    #features .feature-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .feature-item {
+        width: 100%;
     }
 }
+
 
